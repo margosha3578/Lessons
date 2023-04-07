@@ -17,8 +17,6 @@ while decidion != 'стоп':
     counter += 1
     decidion = input('Для добавления покупки введите 1, для выхода "стоп" ')
 
-print(products_list)
-
 with open('products.json', 'w', encoding='UTF-8') as file:
     json.dump(products_list, file, ensure_ascii=False)
 
